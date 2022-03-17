@@ -1,0 +1,38 @@
+  
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+svg {
+  width: 100%; 
+  /* margin-top: 60px; */
+}
+svg text {
+  font-family: 'Montserrat', sans-serif;
+  /* text-transform: uppercase; */
+  animation: stroke 4s 1 alternate;
+  stroke-width: 1;
+  stroke: rgb(4, 75, 181);
+  font-size: 4rem;
+  font-weight: 900;
+}
+@keyframes stroke {
+  0%   {fill: rgba(255, 255, 255, 0.5); stroke: rgb(255, 255, 255);
+    stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1;}
+  70%  {fill: rgba(0, 57, 179, 0.3); stroke: rgb(140, 155, 177); }
+  80%  {fill: rgba(27, 79, 104, 0.3); stroke: rgba(41, 77, 135, 0.7); stroke-width: 2; }
+  100% {fill: rgba(255, 255, 255, 0.5); stroke: rgb(4, 75, 181); 
+    stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 1;}
+  }
+
+@media only screen and (max-width: 480px){
+  svg text {
+    font-family: 'Montserrat', sans-serif;
+    /* text-transform: uppercase; */
+    animation: stroke 4s 1 alternate;
+    stroke-width: 1;
+    stroke: #1666C9;
+    font-size: 1.8rem;
+    font-weight: 900;
+  }
+
+}
+    
